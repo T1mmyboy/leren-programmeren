@@ -2,6 +2,7 @@ a = input("Getal A: ")
 b = input("Getal B: ")
 if a > b : 
     max = (a)
+    min = (b)
     print("a is het grootste getal:",max, "")
 elif b > a :
     max = (b)
@@ -9,5 +10,7 @@ elif b > a :
     print("a"" is het kleinste getal"":",min,"")
 else: 
     max = (a)
-    min = (b)
+    min = (a)
     print("a is evengroot als b")
+print("Het minimum is:" ,min)
+print("Het maximum is:" ,max)
