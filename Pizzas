@@ -1,0 +1,36 @@
+from ast import Break
+from cgitb import small
+from itertools import repeat
+from operator import truediv
+from re import I
+from socket import if_nameindex
+from sre_constants import REPEAT
+from termios import VREPRINT
+from tkinter.messagebox import QUESTION
+
+
+Naam = input("Wat is uw Naam? ")
+
+Keuze = input("Welke pizza wilt u? Small, Medium, Large: ")
+repeat == True
+while =
+
+    if ("Small"):
+        repeat == False
+        Aantal = input("Hoeveel Small Pizza's : ")
+        Totaal = int (Aantal) * 6.99
+    elif ("Medium") :
+     Aantal = input("Hoeveel Medium Pizza's? : ")
+    Totaal = int (Aantal) * 9.99
+     elif ("Large") : 
+        Aantal = input("Hoeveel Large Pizza's? : ")
+        Totaal = int (Aantal) * 12.99
+        
+
+SmallP = 6.99
+MediumP = 9.99
+LargeP = 12.99
+
+print ("""------------------------------------------
+""",Naam, """uw totaal voor""",Aantal ,Keuze, """Pizza's is""",Totaal,"""
+----------------------------------------------------""")

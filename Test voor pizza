@@ -1,0 +1,4 @@
+Small_pizza = input("Wilt u een Small pizza?: ")
+if Small_pizza == ("ja") 
+
+
