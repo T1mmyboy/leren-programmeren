@@ -1,4 +1,11 @@
-for x in range(30, 0, -1):
-    print(x)
-print("big boom")
-print("WE HAVE A BLASTOFF!!!!")
+import imp
+from time import sleep
+point = 30 
+point = int(point)
+
+while point >-1:
+    print(point)
+    point = point-1
+    
+print("WEEE HAVEE A BLASTOFFF")
+print("*explosion*")
