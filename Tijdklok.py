@@ -1,11 +1,19 @@
 am = True
 pm = True
+tijd = 0
+tijd = int(tijd)
+
 while am == True:
-    for x in range(0,13):
-        print ("",x,"AM")
+    print("",tijd,"AM")
+    tijd = tijd +1
+    if tijd <= 12:
+        am = True
+    else:
         am = False
-        
 while pm == True:
-    for x in range(13, 24):
-        print("",x,"PM")
+    print("",tijd,"PM")
+    tijd = tijd +1
+    if tijd <24:
+        pm = True
+    else:
         pm = False
