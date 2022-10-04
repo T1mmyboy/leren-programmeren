@@ -1,9 +1,10 @@
 from RobotArm import RobotArm
-
-robotArm = RobotArm('exercise 9')
+# Let op: hier start het anders voor een random level:
+robotArm = RobotArm()
+robotArm.randomLevel(1,7)
 
 # Jouw python instructies zet je vanaf hier:
-
+robotArm.operate()
 
 
 

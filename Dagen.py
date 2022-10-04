@@ -25,7 +25,6 @@ while dag == "vrijdag" or dag == "vr":
 while dag == "zaterdag" or dag == "za":
     print(zo,ma,di,wo,do,vr)
     break
-
 while dag == "zondag" or dag == "zo":
     print(ma,di,wo,do,vr,za)
     break

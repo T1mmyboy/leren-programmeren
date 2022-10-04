@@ -1,18 +1,16 @@
 from webbrowser import get
 
-
-getal = input("Hoeveel keer is quits? ")
-getal = int(getal)
-gelijk = False
-punt = 0
-punt = int(punt)
-while gelijk == False:
-    if punt < getal:
-        print("?")
-        punt = punt +1
-        gelijk = False
+opnieuw = True
+teller = 0
+while opnieuw == True:
+    quits = input("?")
+    teller = teller +1
+    if quits == "quit" or quits == "quits":
+        opnieuw = False
+        print("",teller,"Keer tot Quits")
     else:
-        print("dat waren",punt,"vraagtekens")
-        gelijk = True
+        opnieuw = True
+
+
 
 
