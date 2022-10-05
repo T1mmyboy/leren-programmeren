@@ -4,8 +4,15 @@ robotArm = RobotArm()
 robotArm.randomLevel(1,7)
 
 # Jouw python instructies zet je vanaf hier:
-robotArm.operate()
-
+nummer = 1
+while robotArm.grab()== True:
+    for x in range(nummer):
+        robotArm.moveRight()
+    robotArm.drop()
+    for x in range(nummer):
+        robotArm.moveLeft()
+    nummer = nummer +1
+    
 
 
 
