@@ -1,0 +1,9 @@
+#Het programma moet vragen voor een naam en Justin weg sturen, bij Tim vragen hoe het gaat en de rest welkommen
+
+input=naam=("Wat is uw naam? : ")
+if naam = "Justin":
+    print("Ga weg Justin")
+elif:
+    print("Welkom ".naam." op school ")
+else naam == "Tim":
+    print(,"Hoe gaat ie Tim?",)

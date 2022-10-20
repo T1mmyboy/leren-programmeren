@@ -1,0 +1,21 @@
+from audioop import reverse
+from tkinter import N
+from tkinter.ttk import Separator
+
+
+
+myList = []
+opnieuw = True
+while opnieuw == True:
+    keuze = input("Wilt u iets toevoegen? : ").capitalize()
+    if keuze == "Ja":
+        item = input("Wat wilt u toevoegen? : ").capitalize()
+        myList.append(item)
+    else:
+        myList = {i:myList.count(i) for i in myList}
+        uitzondering = {39 : None, 123 : None, 125 : None}
+        testt (myList[nummer])
+        for x in myList:
+            print(testt)
+            nummer = nummer +1
+        opnieuw = False

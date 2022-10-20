@@ -1,0 +1,7 @@
+input=naam=("Wat is uw naam? : ")
+if naam = "Justin":
+    print("Ga weg Justin")
+elif:
+    print("Welkom ".naam." op school ")
+else naam == "Tim":
+    print(,"Hoe gaat ie Tim?",)
