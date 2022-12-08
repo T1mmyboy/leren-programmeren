@@ -28,4 +28,4 @@ vertaling = {
 
 
 
-print("De",langste,"(",letters,"letters ) heeft een",vertaling[kleur],"kleur en een gewicht van",gewicht,"Kg." )
+print("De",langste,"("+str(letters)+" letters) heeft een",vertaling[kleur],"kleur en een gewicht van",gewicht,"Kg." )

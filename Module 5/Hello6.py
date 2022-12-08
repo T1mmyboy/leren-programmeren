@@ -21,7 +21,7 @@ def division(eerste,tweede):
 firstround = True
 berekeningen = True
 teller = 0
-antwoorden = ["a", "b", "c", "d", "e", "f","g","h","i"]
+antwoorden = ["a", "b", "c", "d", "e", "f","g","h"]
 alles = True
 opdracht = True
 while opdracht == True:
@@ -100,6 +100,8 @@ while opdracht == True:
                 print("Dat is geen optie!")
                 continue
     berekeningen = True
+    if "i" not in antwoorden:
+        antwoorden.append("i")
     while firstround == False:
         choice = input("wat wilt u doen met "+str(resultaat)+"? A) getallen optellen, B) getallen aftrekken, C) getallen vermenigvuldigen, D) getallen delen, E) getal ophogen, F) getal verlagen, G) getal verdubbelen of H) getal halveren of I) stoppen? : ").lower()
         if choice not in antwoorden:
