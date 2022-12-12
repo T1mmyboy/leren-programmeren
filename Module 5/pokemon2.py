@@ -10,7 +10,7 @@ tackle = int(40)
 psychic= int(95)
 bite = int(60)
 points = 0
-first_time = False
+first_time = True
 opniew = True
 sableye_moves = ["Scratch", "Psychic", "Bite", "Tackle"]
 def intro():
@@ -37,7 +37,6 @@ def intro():
     sleep(3)
 def randomgetal():
     getal = randint(1,4)
-    print(getal)
     return getal    
 def opnieuwspelen():
     x = 1
@@ -136,20 +135,20 @@ while opniew == True:
                     if pikachu_Hp <0:
                         pikachu_Hp = 0
                     print("Pikachu now has",pikachu_Hp,"HP")
-                    
-                    if pikachu_Hp == 0:
-                        print("You defeated Pikachu!")
-                        points =+1
-                        print("You gained 1 point!")
-                        if opnieuwspelen() == True:
-                            first_time = False
-                            break
-                        else: 
-                            print("You had",points,"points!")
-                            quit()
                     break
         else:
             continue
+        if pikachu_Hp == 0:
+            print("You defeated Pikachu!")
+            points =+1
+            print("You gained 1 point!")
+            if opnieuwspelen() == True:
+                first_time = False
+                break
+            else: 
+                print("You had",points,"points!")
+                quit()
+                
         sleep(1)
         print("It is now the opponents turn!")
         sleep(1)

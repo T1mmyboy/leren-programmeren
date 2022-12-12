@@ -1,25 +1,30 @@
 import time
 from termcolor import colored
 from data import JOURNEY_IN_DAYS
+from data import mainCharacter
 
 ##################### M04.D02.O2 #####################
 
 def copper2silver(amount:int) -> float:
-    pass
+    print("copper",amount/10)
+    return amount/10
 
 def silver2gold(amount:int) -> float:
-    pass
+    print("silver",amount/5)
+    return amount/5
 
 def copper2gold(amount:int) -> float:
-    pass
+    print("copper",amount/50)
+    return amount/50
 
 def platinum2gold(amount:int) -> float:
-    pass
+    print("platinum",amount*25)
+    return amount*25
 
 def getPersonCashInGold(personCash:dict) -> float:
-    pass
+    return copper2gold(personCash.get("copper"))+silver2gold(personCash.get("silver"))+personCash.get("gold")+platinum2gold(personCash.get("platinum"))
 
-##################### M04.D02.O4 #####################
+##################### M04.D02.O4 #####################s
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
     pass
