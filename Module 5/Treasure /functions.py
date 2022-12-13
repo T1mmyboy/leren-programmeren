@@ -1,24 +1,25 @@
+from cmath import cos
 import time
 from termcolor import colored
-from data import JOURNEY_IN_DAYS
+from data import JOURNEY_IN_DAYS,COST_FOOD_HORSE_COPPER_PER_DAY,COST_FOOD_HUMAN_COPPER_PER_DAY
 from data import mainCharacter
 
 ##################### M04.D02.O2 #####################
 
 def copper2silver(amount:int) -> float:
-    print("copper",amount/10)
+    
     return amount/10
 
 def silver2gold(amount:int) -> float:
-    print("silver",amount/5)
+    
     return amount/5
 
 def copper2gold(amount:int) -> float:
-    print("copper",amount/50)
+    
     return amount/50
 
 def platinum2gold(amount:int) -> float:
-    print("platinum",amount*25)
+    
     return amount*25
 
 def getPersonCashInGold(personCash:dict) -> float:
@@ -27,21 +28,32 @@ def getPersonCashInGold(personCash:dict) -> float:
 ##################### M04.D02.O4 #####################s
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
-    pass
-
+    total_copper = (COST_FOOD_HUMAN_COPPER_PER_DAY*people+COST_FOOD_HORSE_COPPER_PER_DAY*horses)*JOURNEY_IN_DAYS
+    return copper2gold(total_copper)
 ##################### M04.D02.O5 #####################
 
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
-    pass
-
+    dict = []
+    for x in range(len(list)):
+        if list[x][key] == value:
+            dict.append(list[x])
+    return dict
 def getAdventuringPeople(people:list) -> list:
-    pass
-
-def getShareWithFriends(friends:list) -> int:
-    pass
-
+    
+    return getFromListByKeyIs(people, "adventuring", True)
+def getShareWithFriends(friends:list) -> list:
+    
+    return getFromListByKeyIs(friends, "shareWith", True)
 def getAdventuringFriends(friends:list) -> list:
-    pass
+    my_list = []
+    adventur = getAdventuringPeople(friends)
+    share = getShareWithFriends(friends)
+    combo = adventur+share
+    for x in friends:
+        if x not in my_list:
+            my_list.append(x)
+    return my_list
+
 
 ##################### M04.D02.O6 #####################
 

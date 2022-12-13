@@ -42,7 +42,6 @@ startPrepwork = True
 if rentStuff:
     chapterNr += 1
     print_chapter(chapterNr, 'RENTING HORSES AND TENTS')
-
     tents       = getNumberOfTentsNeeded(len(party))
     horses      = getNumberOfHorsesNeeded(len(party)) - 1 #MainCharacter owns a horse
     
