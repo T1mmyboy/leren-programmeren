@@ -95,7 +95,7 @@ def getItemsAsText(items:list) -> str:
         if x<len(items):
             old = old+str(items[x]["amount"])+items[x]["unit"]+" "+items[x]["name"]+", "
     return old
-    
+
 def getItemsValueInGold(items:list) -> float:
     total = 0
     for x in range(len(items)):
@@ -163,7 +163,13 @@ def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
 ##################### M04.D02.O12 #####################
 
 def getInvestorsCuts(profitGold:float, investors:list) -> list:
-    pass
+    AmountOfGold = []
+    
+    investors = getInterestingInvestors(investors)
+    for x in range(len(investors)):
+        print(round(profitGold/100*investors[x]["profitReturn"],2))
+        AmountOfGold.append(round((profitGold/100)*investors[x]["profitReturn"],2))
+    return AmountOfGold
 
 def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:list) -> float:
     pass
